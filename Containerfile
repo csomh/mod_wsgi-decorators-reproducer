@@ -1,10 +1,9 @@
-FROM fedora:35
+ARG fedora_version=34
+FROM fedora:${fedora_version}
 
 RUN dnf -y install \
     httpd \
     python3-mod_wsgi \
-    python3-flexmock \
-    python3-jsonschema \
     python3-flask \
     && dnf clean all
 
