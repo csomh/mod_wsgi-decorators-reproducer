@@ -89,3 +89,6 @@ Full server logs:
 
 The above works if the app is running on top of Fedora Linux 34 (`make f34`),
 which has Apache/2.4.51, mod_wsgi/4.7.1, Python/3.9.
+
+Running a similar code in an interactive Python interpreter or as a standalone
+Python script also works as expected on Fedora Linux 35, Python 3.10.
