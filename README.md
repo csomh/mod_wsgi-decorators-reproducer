@@ -1,9 +1,10 @@
 # Reproducer: Decorators on classes ignored in Apache/2.4.51, mod_wsgi/4.9.0 Python/3.10
 
-This is a simple flask app to reproduce an issue our team met with our
-`mod_wsgi` served apps, once upgrading their base images to Fedora Linux 35: it
-seems, that decorators applied to classes are ignored, and so modifications
-they would do to classes do not take place.
+This is a simple flask app to reproduce an
+[issue](https://github.com/GrahamDumpleton/mod_wsgi/issues/729) our team met
+with our `mod_wsgi` served apps, once upgrading their base images to Fedora
+Linux 35: it seems, that decorators applied to classes are ignored, and so
+modifications they would do to classes do not take place.
 
 This seem to be happening only when the code is run by `mod_wsgi`. Using
 flask's build in server, or gunicorn does not have this issue.
